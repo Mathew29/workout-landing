@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import styles from './App.module.css';
+import React from 'react'
+// import styles from './App.module.css';
 
 import LandingPage from './components/LandingPage/LandingPage';
 
