@@ -1,12 +1,13 @@
 import React from 'react'
+
+import styles from "./LandingPage.module.css"
 import workoutPic from '../../assets/images/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg';
 
 const LandingPage = () => {
     
     return (
         <div>
-            <h1>Hello World</h1>
-            <img src={workoutPic} alt="workout pic" />
+            <img className={styles.Workout} src={workoutPic} alt="workout pic" />
         </div>
     )
 }
