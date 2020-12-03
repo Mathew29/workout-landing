@@ -11,7 +11,7 @@ const LandingPage = () => {
             <input
               style={{
                 marginTop: "10px",
-                width: "100%",
+                width: "50%",
                 padding: "5px",
                 border: "1px, solid, black",
                 WebkitBoxSizing: "border-box",
@@ -25,7 +25,7 @@ const LandingPage = () => {
             <input
               style={{
                 marginTop: "10px",
-                width: "100%",
+                width: "40%",
                 padding: "5px",
                 border: "1px, solid, black",
                 WebkitBoxSizing: "border-box",
@@ -39,18 +39,19 @@ const LandingPage = () => {
             <input
               style={{
                 marginTop: "10px",
-                width: "100%",
+                width: "30%",
                 padding: "5px",
                 border: "1px, solid, black",
                 WebkitBoxSizing: "border-box",
                 MozBoxSizing: "border-box",
                 boxSizing: "border-box",
               }}
-              placeholder="Email"
+              placeholder="Email..."
               className={styles.Email}
               type="string"
             />
           </div>
+          <button >Button</button>
         </div>
       </div>
     </div>
