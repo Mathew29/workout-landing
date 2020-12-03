@@ -1,5 +1,6 @@
 import React from "react";
 
+import Input from "../UI/Input/Input"
 import styles from "./LandingPage.module.css";
 
 const LandingPage = () => {
