@@ -46,4 +46,17 @@ class SignUp extends Component {
             }
         }
     }
+
+    checkValidity(value, rules) {
+        let isValid = true;
+        if (rules.required) {
+            isValid = value.trim() !== "" && isValid;
+        }
+
+        if (rules.minLength && rules.maxLength) {
+            isValid = value.length >= rules.minLength && value.length <= rules.maxLength && isValid;
+        }
+
+        return isValid;
+    }
 }
