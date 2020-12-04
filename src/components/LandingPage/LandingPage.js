@@ -21,7 +21,7 @@ const LandingPage = () => {
               }}
               placeholder="First Name..."
               className={styles.FirstName}
-              type="string"
+              type="text"
             />
             <input
               style={{
@@ -35,7 +35,7 @@ const LandingPage = () => {
               }}
               placeholder="Last Name..."
               className={styles.LastName}
-              type="string"
+              type="text"
             />
             <input
               style={{
@@ -49,7 +49,7 @@ const LandingPage = () => {
               }}
               placeholder="Email..."
               className={styles.Email}
-              type="string"
+              type="text"
             />
           </div>
           <button >Button</button>

@@ -17,6 +17,32 @@ class SignUp extends Component {
                 },
                 valid: false,
                 touched: false,
+            },
+            lastName: {
+                elementType: "input",
+                elementConfig: {
+                    type: "text",
+                    placeholder: "Last Name..."
+                },
+                value: "",
+                validaton: {
+                    required: true,
+                },
+                valid: false,
+                touched: false,
+            },
+            email: {
+                elementType: "input",
+                elementConfig: {
+                    type: "text",
+                    placeholder: "Email..."
+                },
+                value: "",
+                validation: {
+                    required: true,
+                },
+                valid: false,
+                touched: false,
             }
         }
     }
