@@ -1,14 +1,26 @@
-import React from "react";
-import { Modal } from "react-bootstrap";
-// import Input from "../UI/Input/Input";
+import React, { useState, useEffect } from "react";
+
+import Modal from "../UI/Modal/Modal"
 import styles from "./LandingPage.module.css";
 
 const LandingPage = () => {
+  const [show, setShow] = useState(true);
+  const [modalClosed, setModalClosed] = useState(false)
+
+  const signUpCancelHandler = () => {
+    setModalClosed(true);
+  }
+
   return (
-    <div className={styles.Background}>
-     
-    </div>
-  );
+  <div className={styles.Background}>
+    <Modal 
+    show={show}
+    modalClosed={signUpCancelHandler}
+    >
+      <h1>Hi</h1>
+    </Modal>
+  </div>
+  ) ;
 };
 
 export default LandingPage;
@@ -68,11 +80,8 @@ export default LandingPage;
       </div> */
 }
 
-
-
-
-
-{/* <div className={styles.SignUp}>
+{
+  /* <div className={styles.SignUp}>
 <form>
   <input
     placeholder="First Name..."
@@ -90,4 +99,5 @@ export default LandingPage;
     type="text"
   />
 </form>
-</div> */}
+</div> */
+}
