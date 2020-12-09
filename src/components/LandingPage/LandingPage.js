@@ -1,14 +1,23 @@
 import React from "react";
-
-import Input from "../UI/Input/Input"
+import { Modal } from "react-bootstrap";
+// import Input from "../UI/Input/Input";
 import styles from "./LandingPage.module.css";
 
 const LandingPage = () => {
   return (
     <div className={styles.Background}>
-      <div className={styles.Container}>
+     
+    </div>
+  );
+};
+
+export default LandingPage;
+
+{
+  /* <div className={styles.Container}>
         <div className={styles.ModalContainer}>
           <div className={styles.Modal}>
+          <form >
             <input
               style={{
                 marginTop: "10px",
@@ -51,12 +60,34 @@ const LandingPage = () => {
               className={styles.Email}
               type="text"
             />
-          </div>
-          <button >Button</button>
-        </div>
-      </div>
-    </div>
-  );
-};
 
-export default LandingPage;
+          </form>
+          </div>
+          <button>Button</button>
+        </div>
+      </div> */
+}
+
+
+
+
+
+{/* <div className={styles.SignUp}>
+<form>
+  <input
+    placeholder="First Name..."
+    className={styles.FirstName}
+    type="text"
+  />
+  <input
+    placeholder="Last Name..."
+    className={styles.LastName}
+    type="text"
+  />
+  <input
+    placeholder="Email..."
+    className={styles.Email}
+    type="text"
+  />
+</form>
+</div> */}

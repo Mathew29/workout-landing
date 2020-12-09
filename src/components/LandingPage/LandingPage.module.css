@@ -1,24 +1,52 @@
 .Background {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../../assets/images/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("../../assets/images/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.Container {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+.SignUp {
+  margin: 20px auto;
+  width: 80%;
+  min-height: 50%;
+  text-align: center;
+  box-shadow: 0 2px 3px #ccc;
+  border: 1px solid #eee;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-.ModalContainer {
-    /* max-width: 100%;
+input {
+  display: block;
+  margin-top: 10px;
+  width: 50%;
+  padding: 5px;
+  border: 1px, solid, black;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  .SignUp {
+    width: 500px;
+  }
+}
+
+/* .Container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+} */
+
+/* .ModalContainer { */
+  /* max-width: 100%;
     max-height: 100%; */
-    /* background-color: white;
+  /* background-color: white;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 40%;
@@ -26,32 +54,32 @@
     margin-left: 50%;
     box-shadow: 1px 1px 1px black;
     box-sizing: border-box; */
-    /* overflow-x: hidden; */
+  /* overflow-x: hidden; */
 
-    position: fixed;
-    z-index: 500;
-    background-color: white;
-    width: 30%;
-    /* height: 40%; */
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px black;
-    padding: 16px;
-    left: 15%;
-    top: 30%;
-    box-sizing: border-box;
-    transition: all 0.3s ease-out;
-}
+  /* position: fixed;
+  z-index: 500;
+  background-color: white;
+  width: 30%; */
+  /* height: 40%; */
+  /* border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  padding: 16px;
+  left: 15%;
+  top: 30%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out; */
+/* } */
 
-.Modal {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-}
+/* .Modal {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+} */
 
-@media (min-width: 600px) {
-    .Modal {
-        width: 500px;
-        left: calc(50% - 250px);
-    }
-}
+/* @media (min-width: 600px) {
+  .Modal {
+    width: 500px;
+    left: calc(50% - 250px);
+  }
+} */
