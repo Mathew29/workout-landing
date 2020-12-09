@@ -59,4 +59,61 @@ class SignUp extends Component {
 
         return isValid;
     }
+
+    inputChangedHandler = (event, inputIdentifier) => {
+        const updatedSignUpForm = {
+          ...this.state.signUpForm,
+        };
+        const updatedFormElement = {
+          ...updatedSignUpForm[inputIdentifier],
+        };
+        updatedFormElement.value = event.target.value;
+        updatedFormElement.valid = this.checkValidity(
+          updatedFormElement.value,
+          updatedFormElement.validation
+        );
+        updatedFormElement.touched = true;
+        updatedSignUpForm[inputIdentifier] = updatedFormElement;
+        
+        let formIsValid = true;
+        for (let inputIdentifier in updatedSignUpForm) {
+          formIsValid = updatedSignUpForm[inputIdentifier].valid && formIsValid;
+        }
+        this.setState({ signUpForm: updatedSignUpForm, formIsValid: formIsValid });
+      };
+
+      render() {
+        const formElementsArray = [];
+        for (let key in this.state.signUpForm) {
+            formElementsArray.push({
+                id: key,
+                config: this.state.signUpForm[key],
+            });
+        }
+        let form = (
+            <form onSubmit={this.signUpForm}>
+                {formElementsArray.map((formElement) => (
+                    <Input
+                    key={formElement.id}
+                    elementType={formElement.config.elementType}
+                    elementConfig={formElement.config.elementConfig}
+                    value={formElement.config.value}
+                    shouldValidate={formElement.config.validation}
+                    invalid={!formElement.config.valid}
+                    touched={formElement.config.touched}
+                    changed={(event) => this.inputChangedHandler(event, formElement.id)}
+                     />
+                ))}
+
+            </form>
+        );
+        return (
+            <div className={classes.SignUp} >
+                <h4>Sign Up</h4>
+                {form}
+            </div>
+        )
+      }
 }
+
+export default SignUp;
