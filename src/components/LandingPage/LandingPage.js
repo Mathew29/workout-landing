@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import Modal from "../UI/Modal/Modal";
 import SignUp from "../SignUp/SignUp";
 import styles from "./LandingPage.module.css";
 
 const LandingPage = () => {
-  const [show, setShow] = useState(true);
-  const [modalClosed, setModalClosed] = useState(false)
+  const [show, setShow] = useState(false);
+  const [modalClosed, setModalClosed] = useState(true)
 
   const signUpCancelHandler = () => {
     setModalClosed(true);
@@ -19,7 +19,10 @@ const LandingPage = () => {
     modalClosed={signUpCancelHandler}
     >
       <SignUp />
+      <button onClick={() => setShow(false)} >press me</button>
     </Modal>
+
+    <button onClick={() => setShow(true)}>press me</button>
   </div>
   ) ;
 };
