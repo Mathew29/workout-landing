@@ -1,4 +1,5 @@
 .Button {
+    text-align: center;
     background-color: transparent;
     border: none;
     color: white;
@@ -10,10 +11,10 @@
     font-weight: bold;
 }
 
-.Button:first-of-type {
+/* .Button:first-of-type {
     margin-left: 0;
     padding-left: 0;
-}
+} */
 
 .Button:disabled {
     color: red;
@@ -21,7 +22,9 @@
 }
 
 .Success {
-    color: #5C9210;
+    border-radius: 3px;
+    color: black;
+    background-color: #5C9210;
 }
 
 .Danger {
