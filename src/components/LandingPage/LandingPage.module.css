@@ -20,6 +20,14 @@
   box-sizing: border-box;
 }
 
+.ButtonContainer {
+  /* text-align: center; */
+  margin: 20px auto;
+  align-self: center;
+  padding: 2px;
+  border: 1px solid black;
+}
+
 input {
   display: block;
   margin-top: 10px;
