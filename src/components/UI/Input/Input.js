@@ -32,7 +32,7 @@ const input = (props) => {
             );
             break;
         case "select":
-            InputElement = (
+            inputElement = (
                 <select
                 className={inputClasses.join(' ')}
                 value={props.value}
