@@ -2,29 +2,34 @@ import React, { useState } from "react";
 
 import Modal from "../UI/Modal/Modal";
 import SignUp from "../SignUp/SignUp";
+import Button from "../UI/Button/Button";
 import styles from "./LandingPage.module.css";
 
 const LandingPage = () => {
   const [show, setShow] = useState(false);
-  const [modalClosed, setModalClosed] = useState(true)
+  const [modalClosed, setModalClosed] = useState(true);
 
   const signUpCancelHandler = () => {
     setModalClosed(true);
-  }
+  };
+
+  const signUpOpenHandler = () => {
+    setShow(true);
+  };
 
   return (
-  <div className={styles.Background}>
-    <Modal 
-    show={show}
-    modalClosed={signUpCancelHandler}
-    >
-      <SignUp />
-      <button onClick={() => setShow(false)} >press me</button>
-    </Modal>
-
-    <button onClick={() => setShow(true)}>press me</button>
-  </div>
-  ) ;
+    <div className={styles.Background}>
+      <Modal show={show} modalClosed={signUpCancelHandler}>
+        <SignUp />
+        <button onClick={() => setShow(false)}>press me</button>
+      </Modal>
+      <div className={styles.ButtonContainer}>
+        <Button btnType="Success" clicked={signUpOpenHandler}>
+          press me
+        </Button>
+      </div>
+    </div>
+  );
 };
 
 export default LandingPage;
