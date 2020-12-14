@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-import Modal from "../UI/Modal/Modal"
+import Modal from "../UI/Modal/Modal";
+import SignUp from "../SignUp/SignUp";
 import styles from "./LandingPage.module.css";
 
 const LandingPage = () => {
@@ -17,7 +18,7 @@ const LandingPage = () => {
     show={show}
     modalClosed={signUpCancelHandler}
     >
-      <h1>Hi</h1>
+      <SignUp />
     </Modal>
   </div>
   ) ;
