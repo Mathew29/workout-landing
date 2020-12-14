@@ -25,7 +25,7 @@ const LandingPage = () => {
       </Modal>
       <div className={styles.ButtonContainer}>
         <Button btnType="Success" clicked={signUpOpenHandler}>
-          press me
+          Sign Up Today
         </Button>
       </div>
     </div>
