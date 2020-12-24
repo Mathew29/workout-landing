@@ -17,6 +17,9 @@ const LandingPage = () => {
     setShow(true);
   };
 
+//Hit your goals. Track your workout
+//
+
   return (
     <div className={styles.Background}>
       <Modal show={show} modalClosed={signUpCancelHandler}>
