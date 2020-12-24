@@ -1,5 +1,5 @@
 .Background {
-  display: flex;
+  display: inline-block;
   width: 100vw;
   min-height: 100vh;
   background-image: url("../../assets/images/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg");
