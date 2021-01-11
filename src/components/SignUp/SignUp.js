@@ -26,7 +26,7 @@ class SignUp extends Component {
                     placeholder: "Last Name..."
                 },
                 value: "",
-                validaton: {
+                validation: {
                     required: true,
                 },
                 valid: false,
