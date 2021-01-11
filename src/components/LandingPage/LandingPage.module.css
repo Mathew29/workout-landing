@@ -9,7 +9,7 @@
   background-size: cover;
 }
 
-.SignUp {
+/* .SignUp {
   margin: 20px auto;
   width: 80%;
   min-height: 50%;
@@ -18,15 +18,15 @@
   border: 1px solid #eee;
   padding: 10px;
   box-sizing: border-box;
-}
+} */
 
 .ButtonContainer {
   /* text-align: center; */
   /* margin: 20px auto;
   align-self: center; */
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 30%;
 }
 
 input {
@@ -41,8 +41,20 @@ input {
 }
 
 @media (min-width: 600px) {
-  .SignUp {
-    width: 500px;
+
+  .ButtonContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@media (min-width: 400px) {
+
+  .ButtonContainer {
+    position: absolute;
+    top: 45%;
+    left: 35%;
   }
 }
 
