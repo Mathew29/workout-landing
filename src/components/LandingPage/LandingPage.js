@@ -24,11 +24,14 @@ const LandingPage = () => {
     <div className={styles.Background}>
       <div className={styles.Text}>
         <h1>Hit Your Goals</h1>
-        <h1>Track Your Workout</h1>
+        <h1>Track Your Workout Today!</h1>
       </div>
       <Modal show={show} modalClosed={signUpCancelHandler}>
         <SignUp />
-        <button onClick={() => setShow(false)}>press me</button>
+        <div style={{display: "flex", justifyContent: "space-between"}}>
+        <button onClick={() => setShow(false)}>Cancel</button>
+        <button onClick={() => setShow(false)}>Confirm</button>
+        </div>
       </Modal>
       <div className={styles.ButtonContainer}>
         <Button btnType="Success" clicked={signUpOpenHandler}>
